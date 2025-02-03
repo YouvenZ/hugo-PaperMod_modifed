@@ -13,7 +13,11 @@
         {{ . | markdownify }}
         {{- print " · "}}
     {{- end }}
-
+    <p>
+        <a href="{{ "privacy-policy/" | relURL }}">Privacy Policy</a> · 
+        <a href="{{ "terms-of-service/" | relURL }}">Terms of Service</a> · 
+        <a href="{{ "contact/" | relURL }}">Contact</a>
+    </p>
 </footer>
 {{- end }}
 
